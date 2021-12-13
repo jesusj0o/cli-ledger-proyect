@@ -2,14 +2,7 @@ var Print = (array_transactions, typeSort) => {
 
     var sprintf = require("sprintf-js").sprintf;
     const sortBy = require("./SortBy");
-
-    // const parser = require("./parser");
-    // array_transactions = parser(file);
-
-
     sortBy(array_transactions, typeSort);
-    //    console.log(sprintf("%5j",array_transactions));
-
     for (transaccion in array_transactions) {
         var movements = (array_transactions[transaccion]["movements"].length);
         

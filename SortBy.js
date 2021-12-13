@@ -1,8 +1,8 @@
 function typeSort(array_transactions, typeSort) {
     
-    if (typeSort == 'n') {
+    if (typeSort == 'name') {
         return  sortByDescriptionName(array_transactions);
-    } if (typeSort == 'd') { 
+    } if (typeSort == 'date') { 
         return sortByDate(array_transactions);
     }
 } 

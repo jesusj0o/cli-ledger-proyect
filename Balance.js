@@ -61,7 +61,7 @@ const Balance = (array_transactions,arg) => {
         var cantidad = `${copybalanceContent[keys[i]][1] } ${ copybalanceContent[keys[i]][0]}`;
         console.log(sprintf("%20s %5s",  cantidad, keys[i])); 
     };
-    console.log('---------------------------------------------')
+    console.log('********************')
     
     for (var key in sumas) {
         if (sumas.hasOwnProperty(key)) {           

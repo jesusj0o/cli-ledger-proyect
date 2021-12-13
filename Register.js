@@ -1,15 +1,9 @@
 const Register = (array_transactions, typeSort) => {
 
-    var sprintf=require("sprintf-js").sprintf;
+    var sprintf = require("sprintf-js").sprintf;
     
-    // const parser = require("./parser");
-    // array_transactions = parser(file);
-
     const sortBy = require("./SortBy");
     sortBy(array_transactions, typeSort);
-
-
-    //  console.log(sprintf("%5j",array_transactions));
     
     var registerContent = [];
     var sumas = {};

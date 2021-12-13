@@ -28,8 +28,10 @@ node cli.js print --file "Income.ledger"
 ```
 Sort flag 
 ```
-node cli.js register --sort d --file "Bitcoin.ledger" //d = sorted by date
-node cli.js register --sort n --file "Bitcoin.ledger" //n = sorted by name
+node cli.js register --sort date --file "Bitcoin.ledger" //date = sorted by date
+node cli.js register --sort name --file "Bitcoin.ledger" //nname = sorted by description
 ```
 
 
+unfinished flags: --price-db
+because I didn't do enough research on how it works, I left this feature at the end and didn't have enough time to implement it. 
