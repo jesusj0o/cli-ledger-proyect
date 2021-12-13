@@ -41,9 +41,7 @@ program
 
 })
 // FLAGS
-program
-.option('--price-db <path>', '')
-.action()
+
 
 //FILE FLAG
 program
@@ -63,7 +61,7 @@ function FileExist(){
     if (program.file) {
         const parser = require("./Parser");
         if (program.file == "index.ledger"){ 
-            
+
             array_transactions = parser("Income.ledger");
             console.log(array_transactions);
             
